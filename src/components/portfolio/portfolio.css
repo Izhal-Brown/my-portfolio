@@ -1,15 +1,23 @@
 .portfolio__container{
-  display: grid;
-  grid-template-columns: repeat(3,1fr);
-  gap: 2.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .portfolio__item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
   background: var(--color-bg-variant);
   padding: 1.2rem;
   border-radius: 2rem;
   border: 1px solid transparent;
   transition: var(--transition);
+  width: 300px;
+  height: 400px;
 }
 
 .portfolio__item:hover{
@@ -22,20 +30,33 @@
   overflow: hidden;
 }
 
+.portfolio__item-image img{
+  width: 250px;
+  border-radius: 20px;
+}
+
 .portfolio__item h3{
   margin: 1.2rem 0 2rem;
+  overflow: auto;
 }
+
 .portfolio__item-cta{
   display: flex;
+  justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
+}
+
+.portfolio__item-cta .portfolio__icons{
+  font-size: 20px;
+  position: relative;
+  top: 4px;
 }
 
 
 /* ==================== MEDI QUERIES (MEDIUM DEVICES) ====================== */
 @media screen and (max-width: 1024px) {
   .portfolio__container{
-    grid-template-columns:1fr 1fr;
     gap:1.2rem;
   }
 }
@@ -43,7 +64,6 @@
 /* ==================== MEDI QUERIES (SMALL DEVICES) ====================== */
 @media screen and (max-width: 600px) {
   .portfolio__container{
-    grid-template-columns: 1fr;
     gap: 1rem;
   }
 }
