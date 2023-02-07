@@ -1,4 +1,4 @@
-.portfolio__container{
+.portfolio__container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   gap: 1.5rem;
 }
 
-.portfolio__item{
+.portfolio__item {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -20,34 +20,33 @@
   height: 400px;
 }
 
-.portfolio__item:hover{
+.portfolio__item:hover {
   border-color: var(--color-primary-variant);
   background: transparent;
 }
 
-.portfolio__item-image{
+.portfolio__item-image {
   border-radius: 1.5rem;
   overflow: hidden;
 }
 
-.portfolio__item-image img{
-  width: 250px;
+.portfolio__item-image img {
   border-radius: 20px;
 }
 
-.portfolio__item h3{
+.portfolio__item h3 {
   margin: 1.2rem 0 2rem;
   overflow: auto;
 }
 
-.portfolio__item-cta{
+.portfolio__item-cta {
   display: flex;
   justify-content: center;
   gap: 1rem;
   margin-bottom: 1rem;
 }
 
-.portfolio__item-cta .portfolio__icons{
+.portfolio__item-cta .portfolio__icons {
   font-size: 20px;
   position: relative;
   top: 4px;
@@ -56,14 +55,14 @@
 
 /* ==================== MEDI QUERIES (MEDIUM DEVICES) ====================== */
 @media screen and (max-width: 1024px) {
-  .portfolio__container{
-    gap:1.2rem;
+  .portfolio__container {
+    gap: 1.2rem;
   }
 }
 
 /* ==================== MEDI QUERIES (SMALL DEVICES) ====================== */
 @media screen and (max-width: 600px) {
-  .portfolio__container{
+  .portfolio__container {
     gap: 1rem;
   }
 }
